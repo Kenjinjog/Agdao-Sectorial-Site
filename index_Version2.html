@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Groups Directory</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>🤝 Community Groups Directory</h1>
+        <p>Open for Public - Community Organizations & Resources</p>
+    </header>
+
+    <nav class="navbar">
+        <button class="menu-toggle" id="menuToggle">☰ Menu</button>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#groups">Groups</a></li>
+            <li><a href="#statistics">Statistics</a></li>
+            <li><a href="#contact">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Statistics Section -->
+        <section id="statistics" class="stats-section">
+            <h2>Population by Group Type</h2>
+            <div class="chart-container">
+                <canvas id="populationChart"></canvas>
+            </div>
+        </section>
+
+        <!-- Groups Section -->
+        <section id="groups" class="groups-section">
+            <h2>Community Groups</h2>
+            <div class="groups-container" id="groupsContainer">
+                <!-- Groups will be inserted here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2>Quick Contact</h2>
+            <p>Have questions? Contact any group directly through their listed phone or email.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Community Groups Directory | Open for Public</p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
